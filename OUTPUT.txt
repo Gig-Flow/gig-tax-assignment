@@ -1,7 +1,7 @@
-Mileage Deduction: $__________
-Total Deductions: $__________
-Net Income: $__________
-Self-Employment Tax: $__________
-Income Tax: $__________
-Total Tax: $__________
-Effective Tax Rate: ___%
+Mileage Deduction: $6,650.00
+Total Deductions: $9,850.00
+Net Income: $38,150.00
+Self-Employment Tax: $5,836.95
+Income Tax: $3,877.57
+Total Tax: $9,714.52
+Effective Tax Rate: 20.24%

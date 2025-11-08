@@ -10,4 +10,12 @@ if __name__ == "__main__":
         "income_rate": 0.12,
     }
     result = compute_taxes(data)
-    print(result)
+    
+    # Format and print results
+    print(f"Mileage Deduction: ${result['mileage_deduction']:,.2f}")
+    print(f"Total Deductions: ${result['total_deductions']:,.2f}")
+    print(f"Net Income: ${result['net_income']:,.2f}")
+    print(f"Self-Employment Tax: ${result['se_tax']:,.2f}")
+    print(f"Income Tax: ${result['income_tax']:,.2f}")
+    print(f"Total Tax: ${result['total_tax']:,.2f}")
+    print(f"Effective Tax Rate: {result['effective_rate']:.2f}%")
