@@ -1,4 +1,4 @@
-from tax_calc_starter import compute_taxes
+import { computeTaxes } from "./tax_calc_starter";
 
 if __name__ == "__main__":
     data = {
