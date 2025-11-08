@@ -1,5 +1,5 @@
 import pytest
-from tax_calc_starter import compute_taxes
+from python.tax_calc_starter import compute_taxes
 
 def valid_input():
     return {
