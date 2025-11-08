@@ -1,20 +1,21 @@
 import { computeTaxes } from "./tax_calc_starter";
 
-const res = computeTaxes({
-  gross_income: 48000,
-  expenses: 3200,
-  miles: 9500,
-  mileage_rate: 0.70,
-  se_rate: 0.153,
-  income_rate: 0.12,
-});
-
-const fmt = (n: number) => n.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-
-console.log(`Mileage Deduction: $${fmt(res.mileage_deduction)}`);
-console.log(`Total Deductions: $${fmt(res.total_deductions)}`);
-console.log(`Net Income: $${fmt(res.net_income)}`);
-console.log(`Self-Employment Tax: $${fmt(res.se_tax)}`);
-console.log(`Income Tax: $${fmt(res.income_tax)}`);
-console.log(`Total Tax: $${fmt(res.total_tax)}`);
-console.log(`Effective Tax Rate: ${(res.effective_rate * 100).toFixed(2)}%`);
+if __name__ == "__main__":
+    data = {
+        "gross_income": 48000,
+        "expenses": 3200,
+        "miles": 9500,
+        "mileage_rate": 0.70,
+        "se_rate": 0.153,
+        "income_rate": 0.12,
+    }
+    result = compute_taxes(data)
+    
+    # Format and display results
+    print(f"Mileage Deduction: ${result['mileage_deduction']:,.2f}")
+    print(f"Total Deductions: ${result['total_deductions']:,.2f}")
+    print(f"Net Income: ${result['net_income']:,.2f}")
+    print(f"Self-Employment Tax: ${result['se_tax']:,.2f}")
+    print(f"Income Tax: ${result['income_tax']:,.2f}")
+    print(f"Total Tax: ${result['total_tax']:,.2f}")
+    print(f"Effective Tax Rate: {result['effective_rate']:.2f}%")
