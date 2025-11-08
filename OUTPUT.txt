@@ -1,0 +1,7 @@
+Mileage Deduction: $__________
+Total Deductions: $__________
+Net Income: $__________
+Self-Employment Tax: $__________
+Income Tax: $__________
+Total Tax: $__________
+Effective Tax Rate: ___%
